@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Learn With Us</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <style>
+    /* General Styles */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    }
+
+    /* Header */
+    header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    }
+    header h1 {
+    text-align: center;
+    }
+    header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    }
+    header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    }
+    header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+
+    /* Section Styles */
+    section {
+    padding: 20px 0;
+    text-align: center;
+    }
+    #courses .course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    }
+    .course-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 25%;
+    }
+    .course-card h3 {
+    margin: 0 0 10px;
+    }
+    .course-card p {
+    margin: 0;
+    }
+
+    /* Contact Form */
+    #contact-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    }
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    }
+    #contact-form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    }
+
+  </style>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to the Education Platform</h2>
+      <p>Explore, Learn, and Grow with our expert-curated courses.</p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="container">
+      <h2>Our Courses</h2>
+      <div class="course-list">
+        <div class="course-card">
+          <h3>Web Development</h3>
+          <p>Learn HTML, CSS, JavaScript, and build modern websites.</p>
+        </div>
+        <div class="course-card">
+          <h3>Data Science</h3>
+          <p>Explore Python, Machine Learning, and Data Visualization.</p>
+        </div>
+        <div class="course-card">
+          <h3>Digital Marketing</h3>
+          <p>Master SEO, Social Media, and online marketing strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Education Platform. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for reaching out! We will get back to you soon.');
+    });
+</script>
